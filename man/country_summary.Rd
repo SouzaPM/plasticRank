@@ -7,14 +7,15 @@
 country_summary(year_select = 2019, data = NULL)
 }
 \arguments{
-\item{year_select}{Year to filter}
+\item{year_select}{Year to filter (default = 2019)}
 
 \item{data}{A cleaned data frame from clean_data(). If not provided,
 the function loads and cleans the data automatically.}
 }
 \value{
-A summarized data frame
+A summarized data frame with one row per country
 }
 \description{
-Summarize country-level indicators
+Aggregates observations to the country level and computes average
+environmental and economic indicators for the selected year.
 }
